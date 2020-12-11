@@ -1,10 +1,106 @@
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <style>
+    body, html{
+      background-image: url(BakcgorundCtct6.jpg);
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid green;
+      background: black;
+      color: forestgreen;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+
+    input[type=submit] {
+      background-color: forestgreen;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .container {
+      background-color: grey;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">UNDER CONSTRUCTION</h1>
+  <h1 style="font-weight: bold;">Contacter nous</h1>
+
+
+  <div class="row">
+    <div class="col-sm-3">
+      <p style="font-size: medium;">Veuillez remplir les champs ci-dessous de manière à pouvoir nous contacter</p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+        <form method="POST">
+
+          <label for="fname">Nom</label>
+          <input type="text" id="fname" name="firstname" placeholder="...">
+
+          <label for="lname">Prénom</label>
+          <input type="text" id="lname" name="lastname" placeholder="...">
+
+          <label for="country">Pays</label>
+          <select id="country" name="country">
+            <option value="australia">France</option>
+            <option value="canada">Espagne</option>
+            <option value="usa">Italie</option>
+            <option value="usa">Allemage</option>
+            <option value="usa">Russie</option>
+            <option value="usa">canada</option>
+          </select>
+
+          <label for="subject">Topic</label>
+          <textarea id="subject" name="subject" placeholder="...  " style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+crossorigin="anonymous"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+crossorigin="anonymous">
+</script>
+
 </body>
+
 </html>
