@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <style>
         @font-face{
             font-family: 'Gameplay';
-            src: url("Gameplay.ttf") format('truetype');
+            src: url(assets/Gameplay.ttf) format('truetype');
         }
 
         body{   /* Fade-in effct on load*/
@@ -126,14 +126,20 @@
             background-color: black;
         }
 
+        a:hover, a:active{
+            color: white;
+            text-decoration: none;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             background-color: grey;
+            scroll-behavior: smooth;
             }
 
         .img-header{
-            background-image: url("computer-hacking-code.jpg");
+            background-image: url(assets/computer-hacking-code.jpg);
             height: 50%; 
             background-position: center;
             background-repeat: no-repeat;
@@ -144,7 +150,7 @@
             -o-filter: blur(5px);
             -ms-filter: blur(5px);
             filter: blur(5px);
-            margin-top: 45px;
+            margin-top: 55px;
         }
 
         .transition{
@@ -166,7 +172,7 @@
             float: left;
         }
 
-        .transition1{
+        #transition1{
             font-family: 'Gameplay';
             font-weight: bolder; 
             font-size: 3em; 
@@ -176,7 +182,7 @@
         }
         .transition2{
             margin-bottom: 10em;
-            background-image: url("1.jpg");
+            background-image: url(assets/1.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -277,26 +283,26 @@
 
 
   </head>
-  <body>
+  <body onload="typeWriter()">
 
     <div>
-        <a href="https://www.iut-rcc.fr/"><img src="logoIT.png" class="logo"></a>
+        <a href="https://www.iut-rcc.fr/"><img src="assets/logoIT.png" class="logo" id="top"></a>
     </div>
     
     <div class="wrap">
         <div class="search">
            <input type="text" class="searchTerm" placeholder="...">
            <button type="submit" class="searchButton">
-             <img src="searchIC.png" class="icon">
+             <img src="assets/searchIC.png" class="icon">
           </button>
         </div>
     </div>
     
     
     <nav>
-        <a href="#">Cybersécurité?</a>
-        <a href="#">Ethical hacking</a>
-        <a href="#">Autres</a>
+        <a href="#cyber">Cybersécurité?</a>
+        <a href="#pentester">Ethical hacking</a>
+        <a href="#other">Autres</a>
         <a href="Ref/contact.html">Contact</a>
         <div class="animation start"></div>
     </nav>
@@ -304,16 +310,16 @@
     <div class="img-header"></div>
 
     <div class="transition2">
-        <h1 class="transition1">Projet PPP Cybersecurite</h1>
+        <div id="transition1"> </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-xs-9 col-md-6">
-                <img src="infographic1.png" style="width: 400px">
+                <img src="assets/infographic1.png" style="width: 400px">
             </div>
             <div class="col-xs-3 col-md-6">
-                <p style="font-size: 37px;"> Qu'est-ce que la cybersécurité ?</p>
+                <p style="font-size: 37px;" id="cyber"> Qu'est-ce que la cybersécurité ?</p>
                 <dl>
                     <dt style="font-size: 30px;">Définition : </dt>
                     <dd style="font-size: 22px;">
@@ -332,7 +338,7 @@
         V
     </div>
 
-    <h1 style="text-align: center; font-weight: bolder; font-size: 60px;">PENTSETER (questions)</h1>
+    <h1 style="text-align: center; font-weight: bolder; font-size: 60px;" id="pentester">PENTESTER (questions)</h1>
 
     <div class="container">
         <div class="row">
@@ -378,30 +384,32 @@
         </div>
     </div>
 
-    <div class="row" style="margin-top: 10em; margin-bottom: 10em;">
-        <div class="col-sm-3">
-            <img src="infographic2.jpeg">
-        </div>
-        <div class="col-xl-2">
-            Eos et hinc esse omnesque, duo eu stet ornatus probatus. Duo ut nibh iisque, id vitae insolens vel. Error veniam regione ex vim, eu has quidam periculis. 
-            Postea deleniti at eos, ad iuvaret repudiare mea, ea legendos philosophia sit. Doctus persius eam cu, an his dicta utroque tincidunt.
+    <div style="background-color: rgb(140, 140, 140)">
+        <div class="row" style="margin-top: 10em; margin-bottom: 10em;">
+            <div class="col-sm-3">
+                <img src="assets/infographic2.jpeg">
+            </div>
+            <div class="col-xl-2">
+                Eos et hinc esse omnesque, duo eu stet ornatus probatus. Duo ut nibh iisque, id vitae insolens vel. Error veniam regione ex vim, eu has quidam periculis. 
+                Postea deleniti at eos, ad iuvaret repudiare mea, ea legendos philosophia sit. Doctus persius eam cu, an his dicta utroque tincidunt.
 
-            Sit nobis laoreet debitis ne, in mel singulis euripidis argumentum. 
-            Ut wisi elitr mel, his purto mnesarchum deterruisset id. 
-            Et atomorum voluptatum necessitatibus mea, ea dicunt meliore usu. 
-            Vix everti dolores dissentiet te. 
-            Discere eripuit civibus nam in, mel no movet causae, ex his quas postea. 
-            Ad qui oporteat percipitur liberavisse, harum zril vim an, bonorum abhorreant appellantur in pri.
+                Sit nobis laoreet debitis ne, in mel singulis euripidis argumentum. 
+                Ut wisi elitr mel, his purto mnesarchum deterruisset id. 
+                Et atomorum voluptatum necessitatibus mea, ea dicunt meliore usu. 
+                Vix everti dolores dissentiet te. 
+                Discere eripuit civibus nam in, mel no movet causae, ex his quas postea. 
+                Ad qui oporteat percipitur liberavisse, harum zril vim an, bonorum abhorreant appellantur in pri.
+            </div>
         </div>
+
     </div>
 
-    <p>
-        Ad modo errem prompta has, vel ubique salutatus an, ad quo amet nonumes. Apeirian deterruisset et mea. His id meliore deterruisset, mel debet iudico pertinacia at, ut pri duis sententiae definitiones. Ex eos error suscipit cotidieque, duo in denique dolores.
-    </p>
-    <p>
-        Sea odio labore latine no, id elitr honestatis sit. Nec at iusto perfecto recteque. Nam ut cibo patrioque necessitatibus, ei diceret facilis sea. Ad pri modus laoreet, eu cibo vidisse aliquando vel, everti diceret torquatos sit an.
-    </p>
-    
+        <p>
+            Ad modo errem prompta has, vel ubique salutatus an, ad quo amet nonumes. Apeirian deterruisset et mea. His id meliore deterruisset, mel debet iudico pertinacia at, ut pri duis sententiae definitiones. Ex eos error suscipit cotidieque, duo in denique dolores.
+        </p>
+        <p>
+            Sea odio labore latine no, id elitr honestatis sit. Nec at iusto perfecto recteque. Nam ut cibo patrioque necessitatibus, ei diceret facilis sea. Ad pri modus laoreet, eu cibo vidisse aliquando vel, everti diceret torquatos sit an.
+        </p>
 
 
 
@@ -416,14 +424,15 @@
         </div>
     </div>
 
+    <div class="divider" style="width: 100%; height: 3px; background-color: forestgreen; margin-top: 50px;">
 
+    </div>
 
-
-    <div class="row">
-        <div class="col-sm-1">
+    <div class="row" id="other">
+        <div class="col-xs-1">
             <div id="main-form">
                 <div id="sub-div">
-                <form id="form-one" class="form">
+                <form id="form-one" class="form" style="margin-top: 314px; margin-bottom: 200px;">
                     <h1>Feedback</h1>
                     <p class="name">
                     
@@ -441,8 +450,11 @@
     </div>
 
 
+
     <footer id="footer">
-        Credits &copy; IUT RCC 
+        Credits &copy; IUT RCC
+        <span style="float: right; margin-right: 40px;"> <a href="ref/contact.html">Contact</a></span>
+        <span style="float: left; margin-left: 10px;"><a href="#top">&uarr;</a></span> 
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -453,6 +465,33 @@
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   
+
+
+
+    <script>
+
+        var i = 0;
+        var txt = 'Projet PPP Cybersecurite';
+        var speed = 130;
+        
+        function typeWriter() {
+        
+          if (i < txt.length) {
+                  if (txt.charAt(i) == '/') {
+                      document.getElementById("transition1").innerHTML += '<br>';
+                        }
+          else {
+            document.getElementById("transition1").innerHTML += txt.charAt(i);
+          }
+          
+        }
+        
+           i++;
+           setTimeout(typeWriter, speed);
+        }
+
+
+    </script>
     </body>
 
 </html>
