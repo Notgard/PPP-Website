@@ -1,41 +1,83 @@
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Header -->
-    <title>CyberSecurité - Les Metiers</title>
-    <link rel="icon" href="img/favicon.ico" />
+        <!-- Header -->
+        <title>CyberSecurité - Les Metiers</title>
+        <link rel="icon" href="img/favicon.ico" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="../assets/css/ctc.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-</head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../assets/css/ctc.css">
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" 
+            crossorigin="anonymous">
 
-<body>
-    
-    <h1 class="pageTitle">Les Metiers de la CyberSecurité</h1>
-    
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-    <!-- ----------------------------------------------------- -->
-    <!-- ----------------------------------------------------- -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script 
-        src="https://code.jquery.com/jquery-1.12.4.min.js" 
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
-        crossorigin="anonymous">
-    </script>
+    <header>
+        <div>
+            <a href="https://www.iut-rcc.fr/"><img src="assets/logoIT.png" class="logo" id="top"></a>
+        </div>
+        
+        <div class="wrap">
+            <div class="search">
+            <input type="text" class="searchTerm" placeholder="...">
+            <button type="submit" class="searchButton">
+                <img src="assets/searchIC.png" class="icon">
+            </button>
+            </div>
+        </div>
+        
+        
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="Metiers.html">Les Metiers</a>
+            <a href="Pentester.html">PENTESTER</a>
+            <a href="aPropos.html">A Propos</a>
+            <div class="animation start"></div>
+        </nav>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script 
-        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
-        crossorigin="anonymous">
-    </script>
+        <div class="img-header"></div>
 
-</body>
+        <div class="transition2">
+            <div id="transition1"> </div>
+        </div>
+    </header>
+    <body>
+        
+        <h1 class="pageTitle">Les Metiers de la CyberSecurité</h1>
+        
+
+
+
+        <!-- ----------------------------------------------------- -->
+        <!-- ----------------------------------------------------- -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script 
+            src="https://code.jquery.com/jquery-1.12.4.min.js" 
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+            crossorigin="anonymous">
+        </script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script 
+            src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
+            crossorigin="anonymous">
+        </script>
+
+    </body>
+    <footer id="footer">
+        Credits &copy; IUT RCC
+        <span id="foot-rt"> <a href="ref/contact.html">Contact</a></span>
+        <span id="foot-lt"><a href="#top">&uarr;</a></span> 
+    </footer>
 
 </html>
