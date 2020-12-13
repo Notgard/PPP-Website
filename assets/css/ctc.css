@@ -1,6 +1,10 @@
 body,
 html {
     background-image: url(../BakcgorundCtct6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 input[type=text],
@@ -29,4 +33,10 @@ input[type=submit] {
 .container {
     background-color: grey;
     padding: 20px;
+}
+
+@media screen and (max-width: 1380px) {
+    body {
+        overflow-y: scroll;
+    }
 }
