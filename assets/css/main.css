@@ -68,6 +68,7 @@ nav {
 }
 
 nav a {
+    position: relative;
     line-height: 50px;
     height: 100%;
     width: 100%;
@@ -167,13 +168,12 @@ html {
 }
 
 .transition {
-    position: -webkit-sticky;
     position: sticky;
+    filter: blur(2px);
     top: 0;
     text-align: center;
     font-size: 90px;
     color: grey;
-    filter: blur(2px);
     background-color: honeydew;
     margin-top: 400px;
     margin-bottom: 300px;
@@ -288,7 +288,8 @@ textarea {
 }
 
 #footer {
-    position: fixed;
+    position: relative;
+    text-align: center;
     bottom: 0;
     width: 100%;
     background-color: black;
@@ -303,9 +304,8 @@ textarea {
     margin-bottom: 50px;
 }
 
-.card-body>video {
+video {
     margin-top: 30px;
-    float: left;
     height: 800px;
 }
 
@@ -322,7 +322,6 @@ a {
 
 #foot-rt {
     float: right;
-    margin-right: 40px;
 }
 
 #foot-lt {
