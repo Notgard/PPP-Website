@@ -562,3 +562,12 @@ header {
     border-radius: 15%;
     padding: 10px;
 }
+
+/* RWD */
+@media (min-width: 768px){
+
+}
+
+@media (max-width: 768px){
+
+}
