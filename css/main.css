@@ -18,6 +18,18 @@ body {
     /* Opera */
 }
 
+@keyframes slidein {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -57,30 +69,30 @@ body {
     }
 }
 
-nav {
+.nav-main {
     margin: 27px auto 0;
     position: relative;
     width: 670px;
     height: 50px;
-    background-color: #34495e;
+    background-color: black;
     border-radius: 80px;
     font-size: 0;
 }
 
-nav a {
+.nav-main a {
+    position: relative;
     line-height: 50px;
     height: 100%;
     width: 100%;
     font-size: 15px;
     display: inline-block;
-    position: relative;
     z-index: 1;
     text-align: center;
     color: white;
     cursor: pointer;
 }
 
-nav .animation {
+.nav-main .animation {
     position: absolute;
     height: 100%;
     top: 0;
@@ -109,32 +121,32 @@ a:nth-child(5) {
     width: 120px;
 }
 
-nav .start,
+.nav-main .start,
 a:nth-child(1):hover~.animation {
     width: 150px;
     left: 35px;
     background-color: green;
 }
 
-nav .start-1,
+.nav-main .start-1,
 a:nth-child(2):hover~.animation {
     width: 150px;
     left: 220px;
-    background-color: black;
+    background-color: #232B2B;
 }
 
-nav .start-2,
+.nav-main .start-2,
 a:nth-child(3):hover~.animation {
     width: 100px;
     left: 390px;
     background-color: green;
 }
 
-nav .start-3,
+.nav-main .start-3,
 a:nth-child(4):hover~.animation {
     width: 110px;
     left: 520px;
-    background-color: black;
+    background-color: #232B2B;
 }
 
 a:hover,
@@ -147,7 +159,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    background-color: rgb(143, 143, 143);
+    background-color: grey;
     scroll-behavior: smooth;
 }
 
@@ -157,31 +169,28 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-    margin-top: 55px;
+    margin-top: 90px;
 }
 
 .transition {
-    position: -webkit-sticky;
     position: sticky;
+    filter: blur(2px);
     top: 0;
     text-align: center;
     font-size: 90px;
     color: grey;
-    filter: blur(2px);
     background-color: honeydew;
     margin-top: 400px;
     margin-bottom: 300px;
 }
 
 .logo {
-    width: 10%;
-    height: 10%;
+    width: 15%;
     float: left;
 }
 
@@ -288,25 +297,25 @@ textarea {
 }
 
 #footer {
-    position: fixed;
+    position: relative;
+    text-align: center;
     bottom: 0;
     width: 100%;
     background-color: black;
     color: grey;
+    margin-top: 60px
 }
 
 #video-player-wrapper {
     background-color: rgb(134, 136, 134);
     width: 100%;
     min-height: 120px;
-    overflow: hidden;
     margin-bottom: 50px;
 }
 
-.card-body>video {
+video {
     margin-top: 30px;
-    float: left;
-    height: 800px;
+    height: 550px;
 }
 
 a {
@@ -322,7 +331,6 @@ a {
 
 #foot-rt {
     float: right;
-    margin-right: 40px;
 }
 
 #foot-lt {
@@ -362,6 +370,7 @@ dd {
 
 #left-m {
     float: right;
+    margin-bottom: 40px;
 }
 
 #wrapper-nav {
@@ -369,7 +378,82 @@ dd {
     margin-right: auto;
 }
 
+#seperate {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#graphic2 {
+    margin-right: 170px;
+    margin-bottom: 20px;
+}
+
+#wooper {
+    display: none;
+    width: 300px;
+    height: 35px;
+}
+
+#burger {
+    cursor: pointer;
+    font-size: 25px;
+    color: forestgreen;
+}
+
+.sidenav {
+    height: 0;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    #wooper {
+        display: inline-block;
+        background: black;
+        padding: auto;
+        margin: auto;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 100%;
+        margin-left: 70px;
+    }
+    dt {
+        font-size: 20px
+    }
     dd {
         font-size: 10px;
     }
@@ -378,5 +462,113 @@ dd {
     }
     .form {
         height: 30%;
+    }
+    #transition1 {
+        font-size: 30px;
+    }
+    video {
+        width: 80%;
+        height: 80%;
+    }
+    #graphic1 {
+        width: 60%;
+    }
+    #seperate {
+        display: initial;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .transition {
+        height: 35%;
+    }
+    #pentester {
+        font-size: 2em;
+    }
+    #wrapper-nav {
+        display: none;
+    }
+    .searchTerm {
+        display: none;
+    }
+    .searchButton {
+        margin-left: 140px;
+    }
+    .nav-sub {
+        background: none;
+    }
+    .nav-sub a {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        z-index: 1;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-sub .animation {
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-radius: 80px;
+    }
+    a:nth-child(1) {
+        width: 20px;
+    }
+    a:nth-child(2) {
+        width: 70px;
+    }
+    a:nth-child(3) {
+        width: 60px;
+    }
+    a:nth-child(4) {
+        width: 60px;
+    }
+    a:nth-child(5) {
+        width: 60px;
+    }
+    .nav-sub .start,
+    a:nth-child(1):hover~.animation {
+        width: 150px;
+        height: 5%;
+        left: 0;
+        top: 10px;
+        background-color: green;
+    }
+    .nav-sub .start-1,
+    a:nth-child(2):hover~.animation {
+        width: 150px;
+        top: 10px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-2,
+    a:nth-child(3):hover~.animation {
+        width: 150px;
+        left: 0;
+        height: 45px;
+        top: 45px;
+        background-color: green;
+    }
+    .nav-sub .start-3,
+    a:nth-child(4):hover~.animation {
+        width: 150px;
+        top: 107px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-4,
+    a:nth-child(5):hover~.animation {
+        width: 100px;
+        height: 40px;
+        top: 130px;
+        left: 0;
+        background-color: green;
+    }
+    a:hover,
+    a:active {
+        color: white;
+        text-decoration: none;
     }
 }
