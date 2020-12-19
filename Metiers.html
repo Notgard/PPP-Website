@@ -21,7 +21,87 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/metier.css">
 
+        <style>
+            .inline {
+                display: block;
+                text-align: left;
+            }
+            .inline div{
+                display: inline-block;
+            }
+            .imgTS {
+                display: block;
 
+                /* The image used */
+                background-image: url("img/metier/TechSupp.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                /* Full height */
+                height: 100px;
+                width: 200px;
+            }
+            #ILPent {
+                margin-left: 20%;
+            }
+            #ILPent #Pent {
+                width: 45%;
+            }
+            .imgPent {
+                display: block;
+
+                /* The image used */
+                background-image: url("img/metier/Pent.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                /* Full height */
+                height: 100px;
+                width: 200px;
+            }
+            .imgAnal {
+                display: block;
+
+                /* The image used */
+                background-image: url("img/metier/pc.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                /* Full height */
+                height: 100px;
+                width: 200px;
+            }
+            .imgOper {
+                display: block;
+
+                /* The image used */
+                background-image: url("img/metier/pc.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                /* Full height */
+                height: 100px;
+                width: 200px;
+            }
+            #ILOper {
+                margin-left: 30%;
+            }
+            #ILOper #Oper {
+                width: 45%;
+            }
+            .imgDev {
+                display: block;
+
+                /* The image used */
+                background-image: url("img/metier/pc.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                /* Full height */
+                height: 100px;
+                width: 200px;
+            }
+        </style>
 
     </head>
 
@@ -144,17 +224,20 @@
 
 
         <!-- New Div METIER -->
-        <div id="TechSupp" class="metier">
-            <a id="MTechSupp">
-                <div>
-                    <h2>
-                        Technicien support
-                    </h2>
-                    <p>
-                        Responsable du support technique. Administre et/ou gère la sécurité la conception, la production et la gestion des réseaux de chiffrés et secrets.
-                    </p>                    
-                </div>
-            </a>
+        <div class="inline">
+            <div id="TechSupp" class="metier">
+                <a id="MTechSupp">
+                    <div>
+                        <h2>
+                            Technicien support
+                        </h2>
+                        <p>
+                            Responsable du support technique. Administre et/ou gère la sécurité la conception, la production et la gestion des réseaux de chiffrés et secrets.
+                        </p>                    
+                    </div>
+                </a>
+            </div>
+            <div class="imgTS"></div>
         </div>
         <script>
             let BtnTechSup = document.getElementById("MTechSupp");
@@ -174,17 +257,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div id="Pent" class="metier">
-            <a id="MPentester">
-                <div>
-                    <h2>
-                        Pentester
-                    </h2>
-                    <p>
-                        petester blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>                    
-                </div>
-            </a>
+        <div id="ILPent" class="inline">
+            <div class="imgPent"></div>
+            <div id="Pent" class="metier">
+                <a id="MPentester">
+                    <div>
+                        <h2>
+                            Pentester
+                        </h2>
+                        <p>
+                            petester blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>                    
+                    </div>
+                </a>
+            </div>
         </div>
         <script>
             let BtnPentester = document.getElementById("MPentester");
@@ -204,17 +290,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div id="Anal" class="metier">
-            <a id="MAnalyste">
-                <div>
-                    <h2>
-                        Analyste
-                    </h2>
-                    <p>
-                        Analyste blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div class="inline">
+            <div id="Anal" class="metier">
+                <a id="MAnalyste">
+                    <div>
+                        <h2>
+                            Analyste
+                        </h2>
+                        <p>
+                            Analyste blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="imgAnal"></div>            
         </div>
         <script>
             let BtnAnalyste = document.getElementById("MAnalyste");
@@ -234,17 +323,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div id="Oper" class="metier">
-            <a id="MOperateur">
-                <div>
-                    <h2>
-                        Operateur
-                    </h2>
-                    <p>
-                        Operateur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div id="ILOper" class="inline">
+            <div class="imgOper"></div> 
+            <div id="Oper" class="metier">
+                <a id="MOperateur">
+                    <div>
+                        <h2>
+                            Operateur
+                        </h2>
+                        <p>
+                            Operateur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
         </div>
         <script>
             let BtnOperateur = document.getElementById("MOperateur");
@@ -264,17 +356,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div id="Dev" class="metier">
-            <a id="MDev">
-                <div>
-                    <h2>
-                        Developpeur
-                    </h2>
-                    <p>
-                        Developpeur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div class="inline">
+            <div id="Dev" class="metier">
+                <a id="MDev">
+                    <div>
+                        <h2>
+                            Developpeur
+                        </h2>
+                        <p>
+                            Developpeur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="imgDev"></div> 
         </div>
         <script>
             let BtnDev = document.getElementById("MDev");

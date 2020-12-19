@@ -411,13 +411,9 @@ dd {
     display: block;
     margin-left: 23%;
     }
-.metier .MTechSupp img{
-    display: block;
-    position: absolute;
-    margin-right: 80%;
-}
+
 .metier .MPentester{
-    width: 40%;
+    width: 80%;
     display: block;
     margin-left: 45%;
 }
@@ -425,11 +421,7 @@ dd {
     display: block;
     margin-left: 23%;
 }
-.metier .MPentester img{
-    display: block;
-    position: absolute;
-    margin-right: 80%;
-    }
+
 .metier .MAnalyste{
     width: 40%;
     display: block;
@@ -438,11 +430,6 @@ dd {
 .metier .MAnalyste div{
     display: block;
     margin-left: 23%;
-}
-.metier .MAnalyste img{
-    display: block;
-    position: absolute;
-    margin-right: 80%;
 }
 .exitbtn{
     display: inline-block;
@@ -517,7 +504,6 @@ header {
 }
 #Pent {
     width: 35%;
-    margin-left: 50%;
     padding: 10px;
 }
 #Pent:hover {
@@ -539,7 +525,6 @@ header {
 }
 #Oper {
     width: 35%;
-    margin-left: 60%;
     padding: 10px;
 }
 #Oper:hover {
