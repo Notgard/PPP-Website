@@ -109,18 +109,18 @@ a:nth-child(5) {
     width: 120px;
 }
 
-nav .start,
+nav .start-1,
 a:nth-child(1):hover~.animation {
     width: 150px;
     left: 35px;
     background-color: green;
 }
 
-nav .start-1,
+nav .start,
 a:nth-child(2):hover~.animation {
     width: 150px;
     left: 220px;
-    background-color: black;
+    background-color: green;
 }
 
 nav .start-2,
@@ -134,7 +134,7 @@ nav .start-3,
 a:nth-child(4):hover~.animation {
     width: 110px;
     left: 520px;
-    background-color: black;
+    background-color: green;
 }
 
 a:hover,
@@ -379,4 +379,122 @@ dd {
     .form {
         height: 30%;
     }
+}
+
+/*
+ SPECIFIC CSS
+*/
+
+#pageTitle{
+    margin-right: auto;
+    color:black;
+    padding-top: 20px;
+    font-weight: bold;
+    }
+.metier{
+    padding-top: 20px;
+    display: block;
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 18px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.metier img{
+    width: 7%;
+}
+.metier a{
+    color:black;
+    text-shadow: none;
+}
+.metier .MTechSupp{
+    width: 45%;
+    display: block;
+    margin-left: 20%;
+}
+.metier .MTechSupp div{
+    display: block;
+    margin-left: 23%;
+    }
+.metier .MTechSupp img{
+    display: block;
+    position: absolute;
+    margin-right: 80%;
+}
+.metier .MPentester{
+    width: 40%;
+    display: block;
+    margin-left: 45%;
+}
+.metier .MPentester div{
+    display: block;
+    margin-left: 23%;
+}
+.metier .MPentester img{
+    display: block;
+    position: absolute;
+    margin-right: 80%;
+    }
+.metier .MAnalyste{
+    width: 40%;
+    display: block;
+    margin-left: 25%;
+}
+.metier .MAnalyste div{
+    display: block;
+    margin-left: 23%;
+}
+.metier .MAnalyste img{
+    display: block;
+    position: absolute;
+    margin-right: 80%;
+}
+.exitbtn{
+    display: inline-block;
+    width: 34px;
+}
+button {
+    margin: 6px;
+    border: none;
+    background-color: none;
+    background: none;
+}
+button:hover {
+    border: none;
+    background-color: none;
+    background: none;
+    box-shadow: none;
+}
+.MAbout {
+    text-align: left;
+    display: none;
+    width: 40%;
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    z-index: 21;
+}
+.MAbout p {
+    margin: 20px;
+    text-align: left;
+    }
+.MAbout p a {
+    color: darkgreen;
+    font-weight: bold;
+    text-shadow: none;
+}
+.MAbout h2 {
+    margin-top: -20px;
+    text-align: center;
+    font-weight: bold;
+}
+#MABckgnd {
+    top: -200px;
+    display: none;
+    opacity: 75%;
+    width: 1000%;
+    height: 1000%;
+    z-index: 20;
 }

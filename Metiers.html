@@ -18,78 +18,17 @@
             crossorigin="anonymous">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/metier.css">
 
-        <style>
-            #pageTitle{
-                margin: auto;
-                color:black;
-                padding-top: 20px;
-                font-weight: bold;
-            }
-            .metier{
-                padding-top: 20px;
-                display: block;
-                text-align: left;
-                padding-bottom: 50px;
-                font-size: 18px;
-            }
-            .metier img{
-                width: 7%;
-            }
-            .metier a{
-                color : white;
-            }
-            .metier .MTechSupp{
-                width: 45%;
-                display: block;
-                margin-left: 20%;
-            }
-            .metier .MTechSupp div{
-                display: block;
-                margin-left: 23%;
-            }
-            .metier .MTechSupp img{
-                display: block;
-                position: absolute;
-                margin-right: 80%;
-            }
-            .metier .MPentester{
-                width: 40%;
-                display: block;
-                margin-left: 45%;
-            }
-            .metier .MPentester div{
-                display: block;
-                margin-left: 23%;
-            }
-            .metier .MPentester img{
-                display: block;
-                position: absolute;
-                margin-right: 80%;
-            }
-            .metier .MAnalyste{
-                width: 40%;
-                display: block;
-                margin-left: 25%;
-            }
-            .metier .MAnalyste div{
-                display: block;
-                margin-left: 23%;
-            }
-            .metier .MAnalyste img{
-                display: block;
-                position: absolute;
-                margin-right: 80%;
-            }
-        </style>
     </head>
 
+    
+    
     <header>
         <div>
             <a href="https://www.iut-rcc.fr/"><img src="assets/logoIT.png" class="logo" id="top"></a>
         </div>
-        
+            
         <div class="wrap">
             <div class="search">
             <input type="text" class="searchTerm" placeholder="...">
@@ -98,8 +37,8 @@
             </button>
             </div>
         </div>
-        
-        
+            
+            
         <nav>
             <a href="index.html">Accueil</a>
             <a href="Metiers.html">Les Metiers</a>
@@ -109,10 +48,60 @@
         </nav>
     </header>
     <body>
-        
         <h1 id="pageTitle">Les Metiers de la CyberSecurité</h1>
+
+        <!-- DIV BACKGROUND -->
+        <img id="MABckgnd" src="img/MABckgnd.png">
+        <script>
+            let MABckgnd = document.getElementById("MABckgnd")
+        </script>
+
+        <!-- DIV METIER ABOUT -->
+        <div id="MTechSuppAbout" class="MAbout">
+            <button id="MTechSuppAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Technicien support
+            </h2>
+            <p>
+                <a>Etudes :</a> Bac +? (Master géstion des réseaux)
+                <a>Salaire moyen :</a> 999999999€/an
+            </p>
+            <p>
+                  Le Technicien support est blablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blab
+            </p>
+        </div>
+        
+        <div id="MPentesterAbout" class="MAbout">
+            <button id="MPentesterAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Pentester
+            </h2>
+            <p>
+                <a>Etudes :</a> Bac +? (Master penetration)
+                <a>Salaire moyen :</a> 999999999€/an
+            </p>
+            <p>
+                  Le Pentester est blablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blab
+            </p>
+        </div>
+        
+        <div id="MAnalysteAbout" class="MAbout">
+            <button id="MAnalysteAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <h2>
+                Analyste
+            </h2>
+            <p>
+                <a>Etudes :</a> Bac +? (Master anal)
+                <a>Salaire moyen :</a> 999999999€/an
+            </p>
+            <p>
+                  L'Analyste est blablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blabblablablabla blablablablablabla blablablabla blab
+            </p>
+        </div>
+        <!-- New Div METIER -->
+
         <div class="metier">
-            <a class="MTechSupp" href="">
+            <a id="MTechSupp">
                 <img class="photoMetier" src="img/photometier.svg">
                 <div>
                     <h2>
@@ -124,8 +113,26 @@
                 </div>
             </a>
         </div>
+        <script>
+            let BtnTechSup = document.getElementById("MTechSupp");
+            let DivTechSuppAbout = document.getElementById("MTechSuppAbout");
+            let DTSAExitBtn = document.getElementById("MTechSuppAboutExit")
+            
+            BtnTechSup.addEventListener("click", () => {
+                DivTechSuppAbout.style.display = "block"
+                DivTechSuppAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DTSAExitBtn.addEventListener("click", () => {
+                DivTechSuppAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- New Div METIER -->
         <div class="metier">
-            <a class="MPentester" href="">
+            <a id="MPentester">
                 <img class="photoMetier" src="img/photometier.svg">
                 <div>
                     <h2>
@@ -137,8 +144,26 @@
                 </div>
             </a>
         </div>
+        <script>
+            let BtnPentester = document.getElementById("MPentester");
+            let DivPentesterAbout = document.getElementById("MPentesterAbout");
+            let DPtstAExitBtn = document.getElementById("MPentesterAboutExit")
+
+            BtnPentester.addEventListener("click", () => {
+                DivPentesterAbout.style.display = "block"
+                DivPentesterAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "absolute"
+            })
+            DPtstAExitBtn.addEventListener("click", () => {
+                DivPentesterAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
+
+        <!-- New Div METIER -->
         <div class="metier">
-            <a class="MAnalyste" href="">
+            <a id="MAnalyste">
                 <img class="photoMetier" src="img/photometier.svg">
                 <div>
                     <h2>
@@ -150,6 +175,22 @@
                 </div>
             </a>
         </div>
+        <script>
+            let BtnAnalyste = document.getElementById("MAnalyste");
+            let DivAnalysteAbout = document.getElementById("MAnalysteAbout");
+            let DAnlExitBtn = document.getElementById("MAnalysteAboutExit")
+            
+            BtnAnalyste.addEventListener("click", () => {
+                DivAnalysteAbout.style.display = "block"
+                DivAnalysteAbout.style.position = "absolute"
+                MABckgnd.style.display = "block"
+                MABckgnd.style.position = "fixed"
+            })
+            DAnlExitBtn.addEventListener("click", () => {
+                DivAnalysteAbout.style.display = "none"
+                MABckgnd.style.display = "none"
+            })
+        </script>
 
 
 
@@ -168,12 +209,13 @@
             integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
             crossorigin="anonymous">
         </script>
-
     </body>
+    
     <footer id="footer">
         Credits &copy; IUT RCC
         <span id="foot-rt"> <a href="ref/contact.html">Contact</a></span>
         <span id="foot-lt"><a href="#top">&uarr;</a></span> 
     </footer>
+    
 
 </html>
