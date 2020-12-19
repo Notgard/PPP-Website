@@ -315,7 +315,7 @@ textarea {
 
 video {
     margin-top: 30px;
-    height: 800px;
+    height: 550px;
 }
 
 a {
@@ -451,6 +451,9 @@ dd {
         border-bottom-left-radius: 100%;
         margin-left: 70px;
     }
+    dt {
+        font-size: 20px
+    }
     dd {
         font-size: 10px;
     }
@@ -551,14 +554,14 @@ dd {
     .nav-sub .start-3,
     a:nth-child(4):hover~.animation {
         width: 150px;
-        top: 100px;
+        top: 107px;
         left: 0;
         background-color: #232B2B;
     }
     .nav-sub .start-4,
     a:nth-child(5):hover~.animation {
-        width: 110px;
-        height: 45px;
+        width: 100px;
+        height: 40px;
         top: 130px;
         left: 0;
         background-color: green;
