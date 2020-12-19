@@ -158,6 +158,7 @@ a:active {
 body,
 html {
     height: 100%;
+    width: 100%;
     margin: 0;
     background-color: grey;
     scroll-behavior: smooth;
@@ -472,6 +473,13 @@ dd {
     }
     #graphic1 {
         width: 60%;
+    }
+    #graphic2 {
+        margin-right: 20px;
+        padding: 20px;
+    }
+    .col-m-4 {
+        display: inline-block;
     }
     #seperate {
         display: initial;
