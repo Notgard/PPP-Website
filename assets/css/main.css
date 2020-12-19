@@ -559,7 +559,7 @@ dd {
     a:nth-child(5):hover~.animation {
         width: 110px;
         height: 45px;
-        top: 140px;
+        top: 130px;
         left: 0;
         background-color: green;
     }
