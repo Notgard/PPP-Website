@@ -125,15 +125,15 @@ a:nth-child(2):hover~.animation {
 
 nav .start-2,
 a:nth-child(3):hover~.animation {
-    width: 100px;
-    left: 390px;
+    width: 150px;
+    left: 360px;
     background-color: green;
 }
 
 nav .start-3,
 a:nth-child(4):hover~.animation {
-    width: 110px;
-    left: 520px;
+    width: 150px;
+    left: 500px;
     background-color: green;
 }
 
@@ -143,11 +143,11 @@ a:active {
     text-decoration: none;
 }
 
-body,
-html {
+body {
     height: 100%;
-    margin: 0;
-    background-color: rgb(143, 143, 143);
+    margin: 0px;
+    margin-top: 0px;
+    background-color: rgb(243, 243, 243);
     scroll-behavior: smooth;
 }
 
@@ -177,12 +177,6 @@ html {
     background-color: honeydew;
     margin-top: 400px;
     margin-bottom: 300px;
-}
-
-.logo {
-    width: 10%;
-    height: 10%;
-    float: left;
 }
 
 #transition1 {
@@ -386,16 +380,17 @@ dd {
 */
 
 #pageTitle{
-    margin-right: auto;
     color:black;
-    padding-top: 20px;
+    margin:auto;
+    padding: 40px;
     font-weight: bold;
-    }
+    font-size: 44px;
+}
 .metier{
-    padding-top: 20px;
+    margin-top: 20px;
     display: block;
     text-align: left;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 18px;
     margin-left: 15%;
     margin-right: 15%;
@@ -497,4 +492,15 @@ button:hover {
     width: 1000%;
     height: 1000%;
     z-index: 20;
+}
+header {
+    background-color: #97a9b9;
+    height: 15%;
+    padding-top : 20px;
+}
+#logoIUT {
+    width: 6%;
+    float: left;
+    margin-left: 10%;
+    padding-top: 10px;
 }
