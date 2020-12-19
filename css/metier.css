@@ -454,7 +454,7 @@ button:hover {
     background-color: white;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: -50px;
+    margin-top: -220px;
     margin-bottom: 15%;
     z-index: 21;
 }
@@ -462,7 +462,7 @@ button:hover {
     margin: 20px;
     text-align: left;
     }
-.MAbout p a {
+.MAbout .txtp>a {
     color: darkgreen;
     font-weight: bold;
     text-shadow: none;
@@ -629,6 +629,18 @@ header {
     /* Full height */
     height: 110px;
     width: 250px;
+}
+.link {
+    font-size: 13px;
+    font-style: italic;    
+    font-weight: bold;
+}
+.link a{
+    color: blue;    
+    text-shadow: none;
+}
+.link a:hover{
+    color: rgb(94, 94, 224);
 }
 
 /* RWD */
