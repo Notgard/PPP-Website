@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="fr">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
         <!-- Header -->
@@ -22,20 +23,25 @@
 
     </head>
 
-    
+    <!-- CREDITS -->
+    <!-- Page développée par KHADDAN Mohammad et ROUBAHIE-FISSA Gael-->
+    <!-- Groupe 2 INFS1_5B -->
+    <!-- CREDITS -->
     
     <header>
-        <div>
-            <a href="https://www.iut-rcc.fr/"><img src="assets/logoIT.png" class="logo" id="top"></a>
+        <div id="top">
+            <a href="https://www.iut-rcc.fr/"><img src="img/logoiut.png" id="logoIUT"></a>
         </div>
             
         <div class="wrap">
+            <!--
             <div class="search">
-            <input type="text" class="searchTerm" placeholder="...">
-            <button type="submit" class="searchButton">
-                <img src="assets/searchIC.png" class="icon">
-            </button>
+                <input type="text" class="searchTerm" placeholder="...">
+                <button type="submit" class="searchButton">
+                    <img src="assets/searchIC.png" class="icon">
+                </button>
             </div>
+            -->
         </div>
             
             
@@ -48,7 +54,9 @@
         </nav>
     </header>
     <body>
-        <h1 id="pageTitle">Les Metiers de la CyberSecurité</h1>
+        <!-- CODE -->
+
+        <h1  id="pageTitle">Les Metiers de la CyberSecurité</h1>
 
         <!-- DIV BACKGROUND -->
         <img id="MABckgnd" src="img/MABckgnd.png">
@@ -64,6 +72,7 @@
             </h2>
             <p>
                 <a>Etudes :</a> Bac +? (Master géstion des réseaux)
+                <br>
                 <a>Salaire moyen :</a> 999999999€/an
             </p>
             <p>
@@ -78,6 +87,7 @@
             </h2>
             <p>
                 <a>Etudes :</a> Bac +? (Master penetration)
+                <br>
                 <a>Salaire moyen :</a> 999999999€/an
             </p>
             <p>
@@ -92,6 +102,7 @@
             </h2>
             <p>
                 <a>Etudes :</a> Bac +? (Master anal)
+                <br>
                 <a>Salaire moyen :</a> 999999999€/an
             </p>
             <p>
@@ -106,6 +117,7 @@
             </h2>
             <p>
                 <a>Etudes :</a> Bac +? (Master anal)
+                <br>
                 <a>Salaire moyen :</a> 999999999€/an
             </p>
             <p>
@@ -114,12 +126,13 @@
         </div>
         
         <div id="MDevAbout" class="MAbout">
-            <button id="MDevExit"><img class="exitbtn" src="img/exitbtn.png"></button>
+            <button id="MDevAboutExit"><img class="exitbtn" src="img/exitbtn.png"></button>
             <h2>
                 Developpeur
             </h2>
             <p>
                 <a>Etudes :</a> Bac +? (Master anal)
+                <br>
                 <a>Salaire moyen :</a> 999999999€/an
             </p>
             <p>
@@ -129,18 +142,20 @@
 
 
         <!-- New Div METIER -->
-        <div class="metier">
-            <a id="MTechSupp">
-                <img class="photoMetier" src="img/photometier.svg">
-                <div>
-                    <h2>
-                        Technicien support
-                    </h2>
-                    <p>
-                        Responsable du support technique. Administre et/ou gère la sécurité la conception, la production et la gestion des réseaux de chiffrés et secrets.
-                    </p>                    
-                </div>
-            </a>
+        <div class="inline">
+            <div id="TechSupp" class="metier">
+                <a id="MTechSupp">
+                    <div>
+                        <h2>
+                            Technicien support
+                        </h2>
+                        <p>
+                            Responsable du support technique. Administre et/ou gère la sécurité la conception, la production et la gestion des réseaux de chiffrés et secrets.
+                        </p>                    
+                    </div>
+                </a>
+            </div>
+            <div class="imgTS"></div>
         </div>
         <script>
             let BtnTechSup = document.getElementById("MTechSupp");
@@ -160,18 +175,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div class="metier">
-            <a id="MPentester">
-                <img class="photoMetier" src="img/photometier.svg">
-                <div>
-                    <h2>
-                        Pentester
-                    </h2>
-                    <p>
-                        petester blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>                    
-                </div>
-            </a>
+        <div id="ILPent" class="inline">
+            <div class="imgPent"></div>
+            <div id="Pent" class="metier">
+                <a id="MPentester">
+                    <div>
+                        <h2>
+                            Pentester
+                        </h2>
+                        <p>
+                            petester blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>                    
+                    </div>
+                </a>
+            </div>
         </div>
         <script>
             let BtnPentester = document.getElementById("MPentester");
@@ -191,18 +208,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div class="metier">
-            <a id="MAnalyste">
-                <img class="photoMetier" src="img/photometier.svg">
-                <div>
-                    <h2>
-                        Analyste
-                    </h2>
-                    <p>
-                        Analyste blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div class="inline">
+            <div id="Anal" class="metier">
+                <a id="MAnalyste">
+                    <div>
+                        <h2>
+                            Analyste
+                        </h2>
+                        <p>
+                            Analyste blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="imgAnal"></div>            
         </div>
         <script>
             let BtnAnalyste = document.getElementById("MAnalyste");
@@ -222,18 +241,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div class="metier">
-            <a id="MOperateur">
-                <img class="photoMetier" src="img/photometier.svg">
-                <div>
-                    <h2>
-                        Operateur
-                    </h2>
-                    <p>
-                        Operateur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div id="ILOper" class="inline">
+            <div class="imgOper"></div> 
+            <div id="Oper" class="metier">
+                <a id="MOperateur">
+                    <div>
+                        <h2>
+                            Operateur
+                        </h2>
+                        <p>
+                            Operateur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
         </div>
         <script>
             let BtnOperateur = document.getElementById("MOperateur");
@@ -253,18 +274,20 @@
         </script>
 
         <!-- New Div METIER -->
-        <div class="metier">
-            <a id="MDev">
-                <img class="photoMetier" src="img/photometier.svg">
-                <div>
-                    <h2>
-                        Developpeur
-                    </h2>
-                    <p>
-                        Developpeur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
-                    </p>
-                </div>
-            </a>
+        <div class="inline">
+            <div id="Dev" class="metier">
+                <a id="MDev">
+                    <div>
+                        <h2>
+                            Developpeur
+                        </h2>
+                        <p>
+                            Developpeur blablablabla blablablablablabla blablablabla blablablablablablablabla blablablabla blabla blablablablablabla.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="imgDev"></div> 
         </div>
         <script>
             let BtnDev = document.getElementById("MDev");
@@ -283,7 +306,7 @@
             })
         </script>
 
-
+        <!-- CODE -->
 
         <!-- ----------------------------------------------------- -->
         <!-- ----------------------------------------------------- -->
@@ -304,7 +327,6 @@
     
     <footer id="footer">
         Credits &copy; IUT RCC
-        <span id="foot-rt"> <a href="ref/contact.html">Contact</a></span>
         <span id="foot-lt"><a href="#top">&uarr;</a></span> 
     </footer>
     
