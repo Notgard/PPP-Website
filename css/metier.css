@@ -495,57 +495,60 @@ header {
 #TechSupp {
     width: 35%;
     padding: 10px;
-}
-#TechSupp:hover {
     border-color: black;
     border-style: solid;
-    border-width: 0.1px;
+    border-width: 2px;
     border-radius: 15%;
+}
+#TechSupp:hover {
+    border-color: darkgreen;
 }
 #Pent {
     width: 35%;
     padding: 10px;
-}
-#Pent:hover {
     border-color: black;
     border-style: solid;
-    border-width: 0.1px;
+    border-width: 2px;
     border-radius: 15%;
+}
+#Pent:hover {
+    border-color: darkgreen;
 }
 #Anal {
     width: 35%;
     margin-left: 10%;
     padding: 10px;
-}
-#Anal:hover {
     border-color: black;
     border-style: solid;
-    border-width: 0.1px;
+    border-width: 2px;
     border-radius: 15%;
+}
+#Anal:hover {
+    border-color: darkgreen;
 }
 #Oper {
     width: 35%;
     padding: 10px;
-}
-#Oper:hover {
     border-color: black;
     border-style: solid;
-    border-width: 0.1px;
+    border-width: 2px;
     border-radius: 15%;
-    padding: 10px;
+}
+#Oper:hover {
+    border-color: darkgreen;
 }
 #Dev {
     width: 35%;
     margin-left: 25%;
     margin-bottom: 50px;
     padding: 10px;
-}
-#Dev:hover {
     border-color: black;
     border-style: solid;
-    border-width: 0.1px;
+    border-width: 2px;
     border-radius: 15%;
-    padding: 10px;
+}
+#Dev:hover {
+    border-color: darkgreen;
 }
 
 /* RWD */
