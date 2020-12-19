@@ -74,7 +74,7 @@ body {
     position: relative;
     width: 670px;
     height: 50px;
-    background-color: black;
+    background-color: #34495e;
     border-radius: 80px;
     font-size: 0;
 }
@@ -270,7 +270,6 @@ a {
 
 #foot-lt {
     float: left;
-    margin-left: 10px;
 }
 
 p>button {
@@ -305,7 +304,7 @@ dd {
 
 #left-m {
     float: right;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #wrapper-nav {
@@ -344,7 +343,7 @@ dd {
     position: fixed;
     z-index: 1;
     top: 0;
-    background-color: #111;
+    background-color: #34495e;
     overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
@@ -379,7 +378,7 @@ dd {
 @media screen and (max-width: 1024px) {
     #wooper {
         display: inline-block;
-        background: black;
+        background: #34495e;
         padding: auto;
         margin: auto;
         border-bottom-right-radius: 100%;
@@ -415,11 +414,12 @@ dd {
         margin-right: 20px;
         padding: 20px;
     }
-    .col-xs-3 col-md-6 {
+    #cyber2 {
         display: inline-block;
     }
     .col-m-4 {
         display: inline-block;
+        font-size: 15px;
     }
     #seperate {
         display: initial;
@@ -479,7 +479,7 @@ dd {
     .nav-sub .start,
     a:nth-child(1):hover~.animation {
         width: 150px;
-        height: 5%;
+        height: 30px;
         left: 0;
         top: 10px;
         background-color: green;
@@ -502,7 +502,8 @@ dd {
     .nav-sub .start-3,
     a:nth-child(4):hover~.animation {
         width: 150px;
-        top: 107px;
+        height: 30px;
+        top: 100px;
         left: 0;
         background-color: #232B2B;
     }
@@ -511,12 +512,64 @@ dd {
         width: 100px;
         height: 40px;
         top: 130px;
-        left: 0;
+        left: 10px;
         background-color: green;
     }
     a:hover,
     a:active {
         color: white;
         text-decoration: none;
+    }
+    .col-m-2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1420px) {
+    #footer {
+        font-size: 12px;
+    }
+    #left-m {
+        font-size: 12px;
+    }
+    #mySidenav.sidenav {}
+    .nav-sub .start,
+    a:nth-child(1):hover~.animation {
+        width: 150px;
+        height: 20px;
+        left: 0;
+        top: 35px;
+        background-color: green;
+    }
+    .nav-sub .start-1,
+    a:nth-child(2):hover~.animation {
+        width: 150px;
+        top: 425px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-2,
+    a:nth-child(3):hover~.animation {
+        width: 150px;
+        left: 0;
+        height: 42px;
+        top: 62px;
+        background-color: green;
+    }
+    .nav-sub .start-3,
+    a:nth-child(4):hover~.animation {
+        width: 150px;
+        height: 30px;
+        top: 115px;
+        left: 0;
+        background-color: #232B2B;
+    }
+    .nav-sub .start-4,
+    a:nth-child(5):hover~.animation {
+        width: 100px;
+        height: 30px;
+        top: 150px;
+        left: 10px;
+        background-color: green;
     }
 }
