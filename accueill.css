@@ -45,18 +45,6 @@ a:nth-child(4):hover~.animation {
     margin-top: 90px;
 }
 
-.transition {
-    position: sticky;
-    filter: blur(2px);
-    top: 0;
-    text-align: center;
-    font-size: 90px;
-    color: honeydew;
-    background-color: grey;
-    margin-top: 400px;
-    margin-bottom: 300px;
-}
-
 #transition1 {
     font-family: 'Gameplay';
     font-weight: bolder;
@@ -103,7 +91,6 @@ a:nth-child(4):hover~.animation {
 }
 
 #video-player-wrapper {
-    background-color: rgb(134, 136, 134);
     width: 100%;
     min-height: 120px;
     margin-bottom: 50px;
@@ -138,7 +125,7 @@ p>button {
 }
 
 #section-wrapper {
-    background-color: rgb(134, 136, 134);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 5%;
     margin-top: 8em;
     margin-bottom: 13em;
