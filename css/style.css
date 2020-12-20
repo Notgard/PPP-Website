@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gameplay';
-    src: url(../Gameplay.ttf) format('truetype');
+    src: url(../assets/Gameplay.ttf) format('truetype');
 }
 
 body {
@@ -16,7 +16,26 @@ body {
     /* Safari and Chrome */
     -o-animation: fadein 4s;
     /* Opera */
+    background: rgb(13,13,88);
+    background: -moz-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(13,13,88,1) 3%, rgba(3,8,42,1) 47%, rgba(1,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0d58",endColorstr="#010000",GradientType=1);
+    background-attachment: local;
 }
+
+
+header {
+    height: 15%;
+    padding-top : 20px;
+}
+#logoIUT {
+    width: 6%;
+    float: left;
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
 
 @keyframes fadein {
     from {
@@ -169,6 +188,37 @@ body {
     width: 100%
 }
 
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid forestgreen;
+    background: forestgreen;
+    text-align: center;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 20%;
+    float: right;
+}
+
 .icon {
     border-radius: 50%;
     width: 100%;
@@ -217,6 +267,10 @@ textarea {
     background-color: green;
 }
 
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
 
 #footer {
     position: fixed;
