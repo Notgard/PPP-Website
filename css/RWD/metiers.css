@@ -378,6 +378,21 @@ dd {
  SPECIFIC CSS
 */
 
+.imgTS {
+    display: none;
+    }
+.imgPent {
+    display: none;
+}
+.imgAnal {
+    display: none;
+}
+.imgInte {
+    display: none;
+}
+.imgDev {
+    display: none;
+}
 #pageTitle{
     color:black;
     margin:auto;
@@ -528,92 +543,17 @@ header {
 .inline div{
     display: inline-block;
 }
-.imgTS {
-    display: block;
-
-    /* The image used */
-    background-image: url("../img/metier/TechSupp.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    margin-bottom:-5%;
-
-    /* Full height */
-    height: 200px;
-    width: 200px;
-}
 #ILPent {
     margin-left: 20%;
 }
 #ILPent #Pent {
     width: 45%;
 }
-.imgPent {
-    display: block;
-
-    /* The image used */
-    background-image: url("../img/metier/Pent.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    margin-bottom:-5%;
-
-    /* Full height */
-    height: 200px;
-    width: 200px;
-}
-.imgAnal {
-    display: block;
-
-    /* The image used */
-    background-image: url("../img/metier/pc.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    margin-bottom:-5%;
-
-    /* Full height */
-    height: 200px;
-    width: 200px;
-}
-.imgInte {
-    display: block;
-
-    /* The image used */
-    background-image: url("../img/metier/pc.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    margin-bottom:-5%;
-
-    /* Full height */
-    height: 200px;
-    width: 200px;
-}
 #ILInte {
     margin-left: 30%;
 }
 #ILInte #Inte {
     width: 45%;
-}
-.imgDev {
-    display: block;
-
-    /* The image used */
-    background-image: url("../img/metier/Dev.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    margin-bottom:-5%;
-
-    /* Full height */
-    height: 200px;
-    width: 200px;
 }
 .link {
     font-size: 13px;
