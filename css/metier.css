@@ -581,7 +581,7 @@ header {
     width: 200px;
 }
 .imgInte {
-    display: inline-block;
+    display: block;
 
     /* The image used */
     background-image: url("../img/metier/pc.png");
@@ -635,5 +635,19 @@ header {
 }
 
 @media (max-width: 768px){
-
+    .imgTS {
+        display: none;
+    }
+    .imgPent {
+        display: none;
+    }
+    .imgAnal {
+        display: none;
+    }
+    .imgInte {
+        display: none;
+    }
+    .imgDev {
+        display: none;
+    }
 }
