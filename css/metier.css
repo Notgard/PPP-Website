@@ -390,7 +390,7 @@ dd {
     margin-top: 20px;
     display: block;
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 18px;
     margin-left: 15%;
     margin-right: 15%;
@@ -401,35 +401,6 @@ dd {
 .metier a{
     color:black;
     text-shadow: none;
-}
-.metier .MTechSupp{
-    width: 45%;
-    display: block;
-    margin-left: 20%;
-}
-.metier .MTechSupp div{
-    display: block;
-    margin-left: 23%;
-    }
-
-.metier .MPentester{
-    width: 80%;
-    display: block;
-    margin-left: 45%;
-}
-.metier .MPentester div{
-    display: block;
-    margin-left: 23%;
-}
-
-.metier .MAnalyste{
-    width: 40%;
-    display: block;
-    margin-left: 25%;
-}
-.metier .MAnalyste div{
-    display: block;
-    margin-left: 23%;
 }
 .exitbtn{
     display: inline-block;
@@ -526,7 +497,7 @@ header {
 #Anal:hover {
     border-color: darkgreen;
 }
-#Oper {
+#Inte {
     width: 35%;
     padding: 10px;
     border-color: black;
@@ -534,13 +505,13 @@ header {
     border-width: 2px;
     border-radius: 15%;
 }
-#Oper:hover {
+#Inte:hover {
     border-color: darkgreen;
 }
 #Dev {
     width: 35%;
     margin-left: 25%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding: 10px;
     border-color: black;
     border-style: solid;
@@ -565,9 +536,12 @@ header {
     background-image: url("../img/metier/TechSupp.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    margin-bottom:-5%;
 
     /* Full height */
-    height: 100px;
+    height: 200px;
     width: 200px;
 }
 #ILPent {
@@ -583,9 +557,12 @@ header {
     background-image: url("../img/metier/Pent.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    margin-bottom:-5%;
 
     /* Full height */
-    height: 100px;
+    height: 200px;
     width: 200px;
 }
 .imgAnal {
@@ -595,27 +572,33 @@ header {
     background-image: url("../img/metier/pc.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    margin-bottom:-5%;
 
     /* Full height */
-    height: 100px;
+    height: 200px;
     width: 200px;
 }
-.imgOper {
-    display: block;
+.imgInte {
+    display: inline-block;
 
     /* The image used */
     background-image: url("../img/metier/pc.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    margin-bottom:-5%;
 
     /* Full height */
-    height: 100px;
+    height: 200px;
     width: 200px;
 }
-#ILOper {
+#ILInte {
     margin-left: 30%;
 }
-#ILOper #Oper {
+#ILInte #Inte {
     width: 45%;
 }
 .imgDev {
@@ -625,10 +608,13 @@ header {
     background-image: url("../img/metier/Dev.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+
+    margin-bottom:-5%;
 
     /* Full height */
-    height: 110px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 }
 .link {
     font-size: 13px;
