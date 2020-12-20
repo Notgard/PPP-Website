@@ -293,7 +293,6 @@ textarea {
     background-color: rgb(134, 136, 134);
     width: 100%;
     min-height: 120px;
-    overflow: hidden;
     margin-bottom: 50px;
 }
 
@@ -630,11 +629,7 @@ header {
 }
 
 /* RWD */
-@media (min-width: 768px){
-
-}
-
-@media (max-width: 768px){
+@media screen and (max-width: 700px){
     .imgTS {
         display: none;
     }
